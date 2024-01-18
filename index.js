@@ -40,24 +40,3 @@
 // const { name, ...rest } = user;
 
 // console.log(rest);
-
-//task level 2 : Advance
-//part 1
-const employeeDetails = {
-  fullName: "John Wick",
-  position: "Actor",
-  yearsOfExperience: "4",
-  skills: ["pen", "gun", "knife"],
-  contact: {
-    email: "johnwick@gun.az",
-    phone: "012345",
-  },
-  department: "Constantine",
-};
-
-delete employeeDetails.contact.email;
-console.log(employeeDetails);
-
-// Part 2
-const { fullName: employeeName, position, contact, ...rest } = employeeDetails;
-console.log(employeeName, position, contact, rest);
