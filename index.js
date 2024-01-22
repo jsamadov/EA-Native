@@ -40,3 +40,36 @@
 // const { name, ...rest } = user;
 
 // console.log(rest);
+
+
+//Lesson 6 part#3
+
+// const myName = "Ibra";
+// const age = 944;
+// const isActive = true
+
+// const x = null
+// const arr = []
+// const obj = {}
+
+// console.log(typeof myName)
+// console.log(typeof age)
+// console.log(typeof isActive)
+// console.log(typeof arr)
+// console.log(typeof obj)
+// console.log(typeof x)
+
+// const newArr = ["bir","iki","uc", "dord"]
+// var i = newArr.length-1;
+// console.log(i)
+// console.log(newArr[newArr.length-1])
+
+//destructuring 
+const arr = [
+    "bir",
+    "iki",
+    12
+]
+
+const [first]= arr
+console.log(first)
