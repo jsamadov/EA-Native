@@ -31,10 +31,12 @@ console.log(firstNumbers <= secondNumbers); //true
 console.log(firstNumbers >= secondNumbers); //false
 
 // Part 4
-console.log(firstNumbers % 2);
-console.log(firstNumbers % 3)
-console.log(firstNumbers % 0)
-
+const evenAndPositive = firstNumbers % 2 == 0 && firstNumbers > 0;
+const evenOrPositive = firstNumbers % 2 == 0 || firstNumbers > 0;
+const isNotNegative = firstNumbers >= 0;
+console.log(evenAndPositive);
+console.log(evenOrPositive);
+console.log(isNotNegative);
 
 // // Task 2
 // // Part 1
