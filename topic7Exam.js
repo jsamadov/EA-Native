@@ -96,9 +96,3 @@ const value = grade > 60 ? console.log("Pass") : console.log("Fail");
 //     ? console.log("Available")
 //     : console.log("Unavailable");
 
-
-
-let x = 4
-const y = ++x
-console.log(x,y);
-
