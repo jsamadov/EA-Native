@@ -2,13 +2,12 @@
 // Part 1
 function calculateSum(numbers) {
   let sum = 0;
-  for (let i = 0; i <= numbers.length - 1; i++) {
+  for (let i = 0; i < numbers.length; i++) {
     sum += numbers[i];
   }
   console.log(sum);
 }
-const arr = [2, 3, 5];
-calculateSum(arr);
+calculateSum([2,3,4]);
 
 // Part 2
 var counter = 0;
