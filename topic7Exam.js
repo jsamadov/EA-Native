@@ -95,4 +95,3 @@ const value = grade > 60 ? console.log("Pass") : console.log("Fail");
 //   price < 50 && inStock === true
 //     ? console.log("Available")
 //     : console.log("Unavailable");
-
