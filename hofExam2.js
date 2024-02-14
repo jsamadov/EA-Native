@@ -28,11 +28,7 @@ const customers = [
 ];
 
 const orders = [
-  { orderId: 101, 
-    customerId: 1, 
-    product: "Laptop", 
-    quantity: 1, 
-    price: 1200 },
+  { orderId: 101, customerId: 1, product: "Laptop", quantity: 1, price: 1200 },
   {
     orderId: 102,
     customerId: 2,
@@ -40,18 +36,8 @@ const orders = [
     quantity: 2,
     price: 800,
   },
-  { orderId: 103, 
-    customerId: 3, 
-    product: "PC", 
-    quantity: 3, 
-    price: 600 
-  },
-  { orderId: 104, 
-    customerId: 4,
-    product: "Headset", 
-    quantity: 4, 
-    price: 300 
-  },
+  { orderId: 103, customerId: 3, product: "PC", quantity: 3, price: 600 },
+  { orderId: 104, customerId: 4, product: "Headset", quantity: 4, price: 300 },
 ];
 
 // Customer Email List:
@@ -89,11 +75,14 @@ customers.findIndex((indexByCountry) => {
 
 // Print Order Summaries:
 
-// orders.forEach((eachOrder) => {
-//   eachOrder.customerName = eachOrder.customerId;
-// });
-// console.log(orders);
-
+orders.forEach((order) => {
+  const customerName = customers.find(
+    (customer) => customer.id === order.customerId
+  ).name;
+  console.log(
+    `Order ${order.orderId} by ${customerName}: ${order.quantity} x ${order.product} for $${order.price} each.`
+  );
+});
 
 // Sort Customers by Name:
 
@@ -114,4 +103,3 @@ console.log(resultName);
 // const resultName=customers.sort((a, b) => {
 //   return a.name.localeCompare(b.name);
 // });
-
