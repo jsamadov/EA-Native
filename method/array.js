@@ -1,0 +1,1 @@
+// Array.prototype.concat(), Array.prototype.every(),Array.prototype.fill(), Array.prototype.findLast(),Array.prototype.findLastIndex(), Array.prototype.flat(), Array.prototype.flatMap(), Array.from(), Array.prototype.includes(), Array.isArray()
